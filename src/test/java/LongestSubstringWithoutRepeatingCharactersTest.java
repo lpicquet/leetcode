@@ -31,7 +31,8 @@ public class LongestSubstringWithoutRepeatingCharactersTest {
                     Arguments.of("bbbbb", 1, "\"b\", with the length of 1"),
                     Arguments.of("pwwkew", 3, "\"wke\", with the length of 3"),
                     Arguments.of("abacd", 4, "\"bacd\", with the length of 4"),
-                    Arguments.of("dvdf", 3, "\"vdf\", with the length of 3")
+                    Arguments.of("dvdf", 3, "\"vdf\", with the length of 3"),
+                    Arguments.of("tmmzuxt", 5, "\"mzuxt\", with the length of 5")
 
             );
         }
