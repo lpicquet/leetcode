@@ -12,7 +12,7 @@ public class MedianOfTwoSortedArraysTest {
 
     @ParameterizedTest
     @ArgumentsSource(Source.class)
-    public void itReturns(int[] nums1, int[] nums2, Integer expected, String message){
+    public void itReturns(int[] nums1, int[] nums2, float expected, String message){
         assertEquals(expected, new MedianOfTwoSortedArrays().findMedianSortedArrays(nums1, nums2), message);
     }
 
@@ -21,7 +21,8 @@ public class MedianOfTwoSortedArraysTest {
         @Override
         public Stream<? extends Arguments> provideArguments(ExtensionContext extensionContext) throws Exception {
             return Stream.of(
-                    Arguments.of(new int[]{1,3}, new int[]{2}, 2, "merged array = [1,2,3] and median is 2.")
+                    Arguments.of(new int[]{1,3}, new int[]{2}, 2, "merged array = [1,2,3] and median is 2."),
+                    Arguments.of(new int[]{1,2}, new int[]{3,4}, 2.5f, "merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.")
             );
         }
     }
