@@ -1,0 +1,2 @@
+Design a scalable real-time chat system for a ride-hailing application like Uber or Lyft.
+This system should allow drivers and riders to communicate efficiently during a trip.
