@@ -13,10 +13,6 @@ resource "aws_dynamodb_table" "users" {
     type = "S"
   }
   attribute {
-    name = "username"
-    type = "S"
-  }
-  attribute {
     name = "firstName"
     type = "S"
   }
@@ -36,7 +32,7 @@ resource "aws_dynamodb_table" "users" {
   # GSI for efficient email lookup
   global_secondary_index {
     name  = "username-index"
-    hash_key = "username" # String
+    hash_key = "email" # String
     range_key {
       name = "userId" # String
       type = "S"
