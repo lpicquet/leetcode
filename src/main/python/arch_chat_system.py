@@ -7,7 +7,7 @@ from diagrams.aws.integration import Appsync
 from diagrams import Edge, Cluster
 
 
-with Diagram("arch_chat_system", show=True, direction="TB"):
+with Diagram("arch_chat_system", show=False, direction="TB"):
     with Cluster("Mobile App"):
         rider = User("Rider")
         driver = User("Driver")
