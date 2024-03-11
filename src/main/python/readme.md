@@ -17,9 +17,11 @@ python3 -m pip  install -r requirements.txt
 ```bash
 python3 arch_chat_system.py
 open arch_chat_system.png
+python3 arch_recommendations.py
+open arch_recommendations.png
 ```
 
-## Example data - single dynamodb table
+## Example data - arch_chat_system - single dynamodb table
 
 | PK         | SK             | type         | user_id    | conversation_id | message_id     | enc_conversation_key | content                              | comment                                         |
 |------------|----------------|--------------|------------|-----------------|----------------|----------------------|--------------------------------------|-------------------------------------------------|
